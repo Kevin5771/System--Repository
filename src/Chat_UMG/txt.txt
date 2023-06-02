@@ -1,0 +1,36 @@
+//Logica de mensajes
+texto_mensaje.onkeydown = async function(){
+  if (event.key == "Enter"){
+    if(usuarioconectado == ""){
+      alert("El usuario debe Iniciar Sesión")
+      return;
+    }
+    var db = getDatabase();
+    var referenciamensajes = ref(db, "Mensajes");
+    var nuevallave = push(child(ref(db), "Mensajes")).key;
+    var nuevosDatos = { [nuevallave]:{ 
+          Usuario: nombreusuarioconectado,
+          Mensaje: texto_mensaje.value,
+          fecha: new Date().toLocaleDateString()}
+    }
+    texto_mensaje.value = "";
+    update(referenciamensajes, nuevosDatos);
+  }
+}
+
+
+//Descargar msj en tiempo real
+function escuchar_y_dibujar_mensajes(){
+  //Referencias a base de datos FireBase
+  var db = getDatabase();
+  var referenciamensajes = ref(db, "Mensajes");
+  onValue(referenciamensajes,
+     function(datos){
+    var valoresobtenidos = datos.val();
+      Object.keys(valoresobtenidos).forEach(llave=>{
+        var mensaje = valoresobtenidos[llave];
+        console.log(mensaje);
+      })
+  })
+
+}

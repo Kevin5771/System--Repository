@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="txt.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <a href="../../proyect.html" class="boton-secundario">Volver a Proyectos</a>
+<div class="title"> 
+    <h1>Calculadora Básica</h1>
+    <input type="text" id="result" readonly>
+    <br>
+</div>
+<div class="class">
+<div class = "Math_1">
+    <button onclick="addOperator('(')">(</button>
+    <button onclick="addOperator(')')">)</button>
+    <button onclick="addOperator('Math.sqrt(')">&#8730;)</button>
+    <button onclick="addOperator('Math.pow(')">x<sup>y</sup></button>
+        <br>
+    <button onclick="addOperator('Math.sin(')">sin</button>
+     <button onclick="addOperator('Math.cos(')">cos</button>
+    <button onclick="addOperator('Math.tan(')">tan</button>
+</div>
+
+<div class="Math_2">
+    <button onclick="addToResult('7')">7</button>
+    <button onclick="addToResult('8')">8</button>
+    <button onclick="addToResult('9')">9</button>
+    <button onclick="addOperator('+')">+</button>
+    <br>
+    <button onclick="addToResult('4')">4</button>
+    <button onclick="addToResult('5')">5</button>
+    <button onclick="addToResult('6')">6</button>
+    <button onclick="addOperator('-')">-</button>
+    <br>
+    <button onclick="addToResult('1')">1</button>
+    <button onclick="addToResult('2')">2</button>
+    <button onclick="addToResult('3')">3</button>
+    <button onclick="clearResult()">C</button>
+
+    <br>
+</div>
+    <button onclick="addOperator('*')">*</button>
+    <button onclick="addToResult('0')">0</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="addOperator('/')">/</button>
+    <br>
+</div>
+    <script src="Shark.js"></script>
+</body>
+</html>

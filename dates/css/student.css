@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,500;0,800;1,800&display=swap');
+
+ /* Estilos generales */  
+ body {
+  font-family: 'Wix Madefor Text', sans-serif;
+  background-image: url("/img/Students_fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+  /* Estilos del encabezado */
+  header {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #edeccf;
+  }
+  
+  .nav {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    background-color: #336699;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #1b8798;
+    transform: scale(1.35);
+  }
+
+  .image-container {
+    background-color: black; 
+    height: 110px;
+    display: flex;
+    align-items:flex-start;
+    margin-right: 500px;
+  }
+
+ /* Estilos del  Contenedor*/  
+.contenedor {
+  text-align: center;
+  color: #29323c;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.contenedor-integrantes {
+  display: flex;
+  justify-content: center;
+}
+
+.integrante {
+  margin: 25px;
+  width: 300px;
+  background-color: #fcfef5;
+  border-radius: 35px;
+  padding: 20px 20px 20px 20px ;
+  text-align: center;
+  box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+.integrante img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.integrante h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.integrante p {
+  font-size: 20px;
+  margin-bottom: 0;
+}

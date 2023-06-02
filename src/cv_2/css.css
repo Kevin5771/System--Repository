@@ -1,0 +1,173 @@
+body {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  background-image: url('/img/pexels-thisisengineering-3913025.jpg');
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2;
+  align-items: center;
+}
+
+i {
+  font-size: 50px;
+}
+
+.enlacesp {
+  padding: 25px 35px;
+  text-decoration: none;
+}
+
+.menu-p:hover {
+  background-color: black;
+  color: white;
+  border-radius: 26px;
+}
+
+.boton-secundario {
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #29323c;
+  background-size: cover;
+  border-radius: 18px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.boton-secundario:hover {
+  background-color: #1d252d;
+}
+
+/* Estilos generales */
+a {
+  text-decoration: none;
+}
+
+/* Estilos de la sección de navegación */
+.nav {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+#menu li,
+#dates_one li {
+  list-style-type: none;
+
+}
+
+#menu li a {
+  padding: 5px 10px;
+}
+
+/* Estilos de la sección de datos personales */
+.datos h1 {
+  margin: 0;
+}
+
+#dates_one {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#dates_one li {
+  margin-bottom: 10px;
+}
+
+/* Estilos de la tabla de estudios realizados */
+#studing {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#studing th,
+#studing td {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos de la sección de redes sociales */
+.socialmedia h2 {
+  margin: 0;
+}
+
+.enlacesp {
+  color: #000;
+  margin-right: 10px;
+}
+
+
+
+
+section ul {
+  list-style-type: none ;
+  margin-left: 20px;
+
+}
+
+
+
+
+#email {
+  text-align: center;
+}
+
+#email label,
+#email input,
+#email select {
+  display: block;
+  margin: 10px auto;
+}
+
+#email input[type="email"] {
+  width: 200px;
+}
+
+#email select {
+  width: 220px;
+}
+
+#email textarea {
+  width: 300px;
+  height: 100px;
+  resize: vertical;
+}
+
+#email input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#Contactar{
+  list-style-type: none ;
+  margin-left: 20px;
+}
